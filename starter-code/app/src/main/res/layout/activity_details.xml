@@ -15,7 +15,11 @@
         android:textSize="35dp"
         android:gravity="right|bottom"
         android:padding="20dp"
-        android:background="@drawable/polygons" />
+        android:background="@drawable/polygons"
+        android:contentDescription="Details"
+        android:focusable="true"
+        android:nextFocusDown="@id/where"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,12 +47,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Location"
-                    style="@style/detail_title"/>
+                    style="@style/detail_title"
+                    android:focusable="true"
+                    android:nextFocusDown="@id/where"
+                    android:contentDescription="Location"
+                    />
 
                 <TextView
                     android:id="@+id/where"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:nextFocusDown="@id/details_text"
+                    android:contentDescription="Where"
                     style="@style/detail_info"/>
             </LinearLayout>
 
@@ -66,7 +77,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Time"
-                    style="@style/detail_title"/>
+                    style="@style/detail_title"
+                    android:focusable="True"
+                    android:nextFocusDown="@id/when"
+                    android:contentDescription="Time"/>
 
                 <TextView
                     android:id="@+id/when"
@@ -89,12 +103,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Group Effected"
-                    style="@style/detail_title"/>
+                    style="@style/detail_title"
+                    android:focusable="true"
+                    android:nextFocusDown="@id/who"
+                    android:contentDescription="Group affected"
+                    />
 
                 <TextView
                     android:id="@+id/who"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:nextFocusDown="@id/details_text"
+                    android:contentDescription="Who"
                     style="@style/detail_info"/>
             </LinearLayout>
 
@@ -112,12 +133,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="What Happened"
-                    style="@style/detail_title"/>
+                    style="@style/detail_title"
+                    android:focusable="true"
+                    android:nextFocusDown="@id/what"
+                    android:contentDescription="What Happened"/>
 
                 <TextView
                     android:id="@+id/what"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:nextFocusDown="@id/where"
+                    android:contentDescription="What"
                     style="@style/detail_info"/>
             </LinearLayout>
 
@@ -140,6 +167,8 @@
                 android:layout_weight="1"
                 android:padding="27dp"
                 android:src="@drawable/where"
+                android:focusable="true"
+                android:nextFocusDown="@id/when_image"
                 android:contentDescription="@string/where"/>
 
             <ImageView
@@ -149,6 +178,8 @@
                 android:layout_weight="1"
                 android:padding="27dp"
                 android:src="@drawable/when"
+                android:focusable="true"
+                android:nextFocusDown="@id/who_image"
                 android:contentDescription="@string/when"/>
 
             <ImageView
@@ -158,6 +189,8 @@
                 android:layout_weight="1"
                 android:padding="27dp"
                 android:src="@drawable/who"
+                android:focusable="true"
+                android:nextFocusDown="@id/what_image"
                 android:contentDescription="@string/who"/>
 
             <ImageView
@@ -167,6 +200,7 @@
                 android:layout_weight="1"
                 android:padding="27dp"
                 android:src="@drawable/what"
+                android:focusable="true"
                 android:contentDescription="@string/what"/>
 
         </LinearLayout>

@@ -22,13 +22,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/no_harassment"
-                style="@style/no_harassment_message"/>
+                style="@style/no_harassment_message"
+                android:contentDescription="No Harrasment"/>
 
             <TextView
                 android:id="@+id/chart_header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/groups"
+                android:contentDescription="Group of People (Percentage)"
                 style="@style/chart_header" />
 
 
@@ -69,7 +71,9 @@
             android:layout_marginEnd="30dp"
             android:text="@string/total_instances"
             android:textColor="@color/text_white"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:contentDescription="Total number of instances"
+            />
 
     </RelativeLayout>
 

@@ -19,7 +19,9 @@
         android:layout_height="wrap_content"
         android:textColor="#FFF"
         android:fontFamily="sans-serif-thin"
-        android:paddingLeft="10dp" />
+        android:paddingLeft="10dp"
+        android:contentDescription="Thanks for adding your voice to the movement"
+        />
 
     <ImageView
         android:layout_width="50dp"
